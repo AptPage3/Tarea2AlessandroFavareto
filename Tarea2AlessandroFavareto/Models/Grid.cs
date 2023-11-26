@@ -13,5 +13,7 @@ namespace Tarea2AlessandroFavareto.Models
         public string Nombre  { get; set; }
         public int Clasificacion { get; set; }
         public string Porcentaje { get; set; }
+        
     }
+    
 }
