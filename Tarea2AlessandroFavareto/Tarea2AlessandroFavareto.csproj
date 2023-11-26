@@ -130,7 +130,6 @@
     <Compile Include="Controllers\EncuestasController.cs" />
     <Compile Include="Controllers\GridsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\Tarea2AlessandroFavaretoContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -175,16 +174,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Grids\Create.cshtml" />
-    <Content Include="Views\Grids\Delete.cshtml" />
-    <Content Include="Views\Grids\Details.cshtml" />
-    <Content Include="Views\Grids\Edit.cshtml" />
     <Content Include="Views\Grids\Index.cshtml" />
     <Content Include="Views\Encuestas\Create.cshtml" />
-    <Content Include="Views\Encuestas\Delete.cshtml" />
-    <Content Include="Views\Encuestas\Details.cshtml" />
-    <Content Include="Views\Encuestas\Edit.cshtml" />
-    <Content Include="Views\Encuestas\Index.cshtml" />
+    <Content Include="Views\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

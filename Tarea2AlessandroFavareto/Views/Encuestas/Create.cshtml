@@ -37,6 +37,7 @@
 			@Html.DropDownListFor(model => model.Pais, (IEnumerable<SelectListItem>)ViewBag.Paises, "Seleccione un país", new { @class = "form-control" })
 
 			@Html.ValidationMessageFor(model => model.Pais, "", new { @class = "text-danger" })
+			
 		</div>
 	</div>
 
@@ -44,8 +45,22 @@
 	<div class="form-group">
 		@Html.LabelFor(model => model.Roles, htmlAttributes: new { @class = "control-label col-md-2" })
 		<div class="col-md-10">
-			@Html.EditorFor(model => model.Roles, new { htmlAttributes = new { @class = "form-control" } })
+			@Html.DropDownListFor(model => model.Roles, (IEnumerable<SelectListItem>)ViewBag.Roles, "Seleccione un rol", new { @class = "form-control" })
 			@Html.ValidationMessageFor(model => model.Roles, "", new { @class = "text-danger" })
+		</div>
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(model => model.LenguajePrimario, htmlAttributes: new { @class = "control-label col-md-2" })
+		<div class="col-md-10">
+			@Html.DropDownListFor(model => model.LenguajePrimario, (IEnumerable<SelectListItem>)ViewBag.Lenguajes, "Seleccione un lenguaje primario", new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => model.LenguajePrimario, "", new { @class = "text-danger" })
+		</div>
+	</div>
+	<div class="form-group">
+		@Html.LabelFor(model => model.LenguajeSecundario, htmlAttributes: new { @class = "control-label col-md-2" })
+		<div class="col-md-10">
+			@Html.DropDownListFor(model => model.LenguajeSecundario, (IEnumerable<SelectListItem>)ViewBag.Lenguajes, "Seleccione un lenguaje secundario", new { @class = "form-control" })
+			@Html.ValidationMessageFor(model => model.LenguajeSecundario, "", new { @class = "text-danger" })
 		</div>
 	</div>
 
