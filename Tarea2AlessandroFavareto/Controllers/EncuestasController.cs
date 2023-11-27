@@ -240,35 +240,37 @@ namespace Tarea2AlessandroFavareto.Controllers
             };
             var lenguajes = new List<SelectListItem>
             {
-                new SelectListItem { Value = "C", Text = "C" },
-                new SelectListItem { Value = "C++", Text = "C++" },
-                new SelectListItem { Value = "C#", Text = "C#" },
-                new SelectListItem { Value = "Java", Text = "Java" },
-                new SelectListItem { Value = "Python", Text = "Python" },
-                new SelectListItem { Value = "JavaScript", Text = "JavaScript" },
-                new SelectListItem { Value = "Ruby", Text = "Ruby" },
-                new SelectListItem { Value = "Swift", Text = "Swift" },
-                new SelectListItem { Value = "Kotlin", Text = "Kotlin" },
-                new SelectListItem { Value = "Rust", Text = "Rust" },
-                new SelectListItem { Value = "Go", Text = "Go" },
-                new SelectListItem { Value = "PHP", Text = "PHP" },
-                new SelectListItem { Value = "TypeScript", Text = "TypeScript" },
-                new SelectListItem { Value = "HTML", Text = "HTML" },
-                new SelectListItem { Value = "CSS", Text = "CSS" },
-                new SelectListItem { Value = "SQL", Text = "SQL" },
-                new SelectListItem { Value = "R", Text = "R" },
-                new SelectListItem { Value = "MATLAB", Text = "MATLAB" },
-                new SelectListItem { Value = "Scala", Text = "Scala" },
-                new SelectListItem { Value = "Perl", Text = "Perl" },
-                new SelectListItem { Value = "Haskell", Text = "Haskell" },
-                new SelectListItem { Value = "Lua", Text = "Lua" },
-                new SelectListItem { Value = "Dart", Text = "Dart" },
+                new SelectListItem { Value = "Ada", Text = "Ada" },
                 new SelectListItem { Value = "Assembly", Text = "Assembly" },
+                new SelectListItem { Value = "C", Text = "C" },
+                new SelectListItem { Value = "C#", Text = "C#" },
+                new SelectListItem { Value = "C++", Text = "C++" },
+                new SelectListItem { Value = "Cobol", Text = "Cobol" },
+                new SelectListItem { Value = "Dart", Text = "Dart" },
+                new SelectListItem { Value = "Fortran", Text = "Fortran" },
+                new SelectListItem { Value = "GDScript", Text = "GDScript" },
+                new SelectListItem { Value = "GameMaker Language", Text = "GameMaker Language" },
+                new SelectListItem { Value = "Go", Text = "Go" },
+                new SelectListItem { Value = "Groovy", Text = "Groovy" },
+                new SelectListItem { Value = "Haskell", Text = "Haskell" },
+                new SelectListItem { Value = "Java", Text = "Java" },
+                new SelectListItem { Value = "JavaScript", Text = "JavaScript" },
+                new SelectListItem { Value = "Julia", Text = "Julia" },
+                new SelectListItem { Value = "Kotlin", Text = "Kotlin" },
+                new SelectListItem { Value = "Lua", Text = "Lua" },
+                new SelectListItem { Value = "MATLAB", Text = "MATLAB" },
                 new SelectListItem { Value = "Objective-C", Text = "Objective-C" },
-                new SelectListItem { Value = "Shell", Text = "Shell" },
-                new SelectListItem { Value = "VB.NET", Text = "VB.NET" },
-                new SelectListItem { Value = "COBOL", Text = "COBOL" },
-                new SelectListItem { Value = "Fortran", Text = "Fortran" }
+                new SelectListItem { Value = "Perl", Text = "Perl" },
+                new SelectListItem { Value = "PHP", Text = "PHP" },
+                new SelectListItem { Value = "Python", Text = "Python" },
+                new SelectListItem { Value = "R", Text = "R" },
+                new SelectListItem { Value = "Ruby", Text = "Ruby" },
+                new SelectListItem { Value = "Rust", Text = "Rust" },
+                new SelectListItem { Value = "Scala", Text = "Scala" },
+                new SelectListItem { Value = "Swift", Text = "Swift" },
+                new SelectListItem { Value = "TypeScript", Text = "TypeScript" },
+                new SelectListItem { Value = "Visual Basic", Text = "Visual Basic" }
+
             };
 
             ViewBag.Paises = paises;
@@ -292,7 +294,7 @@ namespace Tarea2AlessandroFavareto.Controllers
                     { 0, encuesta }
                 };
                 Session["DatosSesion"] = datosSesion;
-                
+
             }
             else
             {
@@ -300,8 +302,8 @@ namespace Tarea2AlessandroFavareto.Controllers
                 datosSesion.Add(datosSesion.Count, encuesta);
                 Session["DatosSesion"] = datosSesion;
 
-                
             }
+
             return RedirectToAction("Index","Grids");
             
 

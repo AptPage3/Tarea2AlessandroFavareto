@@ -13,19 +13,20 @@ namespace Tarea2AlessandroFavareto.Controllers
 {
     public class GridsController : Controller
     {
-        
 
         // GET: Grids
         public ActionResult Index()
         {
-            var Lenguaje = new List<Grid>();
+            
             if (Session["DatosSesion"] == null)
             {
+                var Lenguaje = new List<Grid>();
                 string[] Nombres ={
-                    "C", "C++", "C#", "Java", "Python", "JavaScript", "Ruby",
-                    "Swift", "Kotlin", "Rust", "Go", "PHP", "TypeScript", "HTML",
-                    "CSS", "SQL", "R", "MATLAB", "Scala", "Perl", "Haskell", "Lua",
-                    "Dart", "Assembly", "Objective-C", "Shell", "VB.NET", "COBOL", "Fortran"
+                    "Ada", "Assembly", "C", "C#", "C++", "Cobol", "Dart", "Fortran", 
+                    "GDScript", "GameMaker Language", "Go", "Groovy", "Haskell", "Java", 
+                    "JavaScript", "Julia", "Kotlin", "Lua", "MATLAB", "Objective-C", 
+                    "Perl", "PHP", "Python", "R", "Ruby", "Rust", "Scala", "Swift", 
+                    "TypeScript", "Visual Basic"
                 };
                 for (int i = 0; i < Nombres.Length; i++)
                 {
